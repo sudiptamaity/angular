@@ -1,0 +1,16 @@
+<!--<form>
+    ID <input [(ngModel)]="product.id" name="id"/><br /><br />
+    Name<input [(ngModel)]="product.name" name="name"/><br /><br />
+    Price <input [(ngModel)]="product.price" name="price"/><br /><br />
+    Quantity <input [(ngModel)]="product.quantity" name="quantity"/><br /><br />
+    <input type="submit" value="Add" (click)="add()"/>
+</form>-->
+
+
+<form #pform="ngForm" (ngSubmit)="add(pform)">
+    ID <input [(ngModel)]="product.id" name="id"/><br /><br />
+    Name<input [(ngModel)]="product.name" name="name"/><br /><br />
+    Price <input [(ngModel)]="product.price" name="price"/><br /><br />
+    Quantity <input [(ngModel)]="product.quantity" name="quantity"/><br /><br />
+    <input type="submit" value="Add" />
+</form>

@@ -1,0 +1,31 @@
+<div class="panel">
+  <!--division for panel-->
+  <div class="panel-heading">{{title}}</div>
+  <!--division for panel heading-->
+  <div class="panel-body">
+    <!--division for panel body-->
+    <div class="table-responsive">
+      <!--division for table responsive-->
+      <table class="table">
+        <thead>
+          <tr>
+
+            <th>EmpNo</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Date of Joining</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of employees">
+            <td>{{emp.empno}}</td>
+            <td>{{emp.name | uppercase}}</td>
+            <td>{{emp.salary | currency}}</td>
+            <td>{{emp.dateOfJoining}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
